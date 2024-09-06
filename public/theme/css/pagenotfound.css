@@ -1,0 +1,10 @@
+section#pagenotfound {
+  padding-top: 240px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 22px;
+  color: #673d3d;
+}
+section#pagenotfound h1{
+  padding-bottom: 25px;
+}

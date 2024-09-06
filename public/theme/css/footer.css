@@ -1,0 +1,62 @@
+div.cilindro{
+    height: 30px;
+    margin-top: 50px;
+    background: url('../imagens/rodape-topo.png') no-repeat center center;
+    background-size: contain;
+}
+footer{
+    text-align: center;
+    padding: 50px 0 40px 0;
+    background: url(../imagens/bg-footer.png) no-repeat center -61px;
+    background-size: cover;
+}
+footer img.aah {
+  width: 13px;
+  margin-left: -16px;
+}
+footer .rodape{
+  display: flex;
+}
+footer h5{
+  color: #673D3D;
+  font-size: 16px;
+  padding: 18px 0;
+}
+footer p{
+  font-family: 'Raleway';
+  font-weight: 400;
+  color: #A16060;
+  line-height: 1.6;
+  font-size: 14px;
+}
+footer .certificados{
+  margin-top: 50px;
+  display: flex;
+}
+footer .certificados img{
+  margin-right: 16px;
+  width: 111px;
+}
+footer .redesocial{
+  margin-top: 20px;
+}
+footer .redesocial img{
+  padding-right: 6px;
+}
+@media (min-width: 576px) {
+    div.cilindro{
+        margin-top: 100px;
+    }
+  footer {
+    text-align: left;
+  }
+  footer .redesocial {
+    margin-left: 0;
+    padding: 30px;
+    margin-top: 35px;
+  }
+  footer h5{
+    padding-top: 26px;
+  }
+
+}

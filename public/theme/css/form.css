@@ -1,0 +1,51 @@
+form {
+  padding-top: 10px;
+}
+.campos {
+  padding-top: 15px;
+}
+.form-group {
+  text-align: left;
+  margin-bottom: 0px !important;
+}
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+label {
+  display: block !important;
+}
+input {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  width: 100%;
+}
+.customSelect {
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 4px;
+  display: block;
+  font-size: 14px;
+  height: 30px;
+  line-height: 1.5;
+  padding: 0.25rem 0.75rem;
+  width: 100%;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition-property: border-color, box-shadow;
+  transition-duration: 0.15s, 0.15s;
+  transition-timing-function: ease-in-out, ease-in-out;
+  transition-delay: 0s, 0s;
+}
+.remodal-confirm,.remodal-cancel{
+  margin-top: 30px;
+}
+.remodal.remodal-is-initialized.remodal-is-opened {
+  font-family: 'Raleway';
+}

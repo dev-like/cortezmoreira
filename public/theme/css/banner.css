@@ -1,0 +1,126 @@
+section#banner{
+    display: none;
+    color: #fff;
+    height: 100%;
+    min-height: 580px;
+    position: relative;
+    background: #ffcc00 no-repeat center center;
+    background-size: cover;
+}
+nav.exterior{
+    display: block;
+}
+section#banner .pelicula{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(128, 102, 0, 0.70);
+    z-index: 1;
+    opacity: 0.75;
+    background: #ffcc00;
+    background: -moz-linear-gradient(45deg,  #ffcc00 0%, #b28e00 30%, #a78500 62%, #806600 101%);
+    background: -webkit-linear-gradient(45deg,  #ffcc00 0%,#b28e00 30%,#a78500 62%,#806600 101%);
+    background: linear-gradient(45deg,  #ffcc00 0%,#b28e00 30%,#a78500 62%,#806600 101%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', endColorstr='#806600',GradientType=1 );
+}
+section#banner .box-banner{
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+section#banner .box-banner.active{
+    display: block;
+}
+section#banner .box-banner .left{
+    left: 0;
+    width: 85%;
+    padding: 0 10px;
+    position: absolute;
+}
+section#banner .box-banner .right{
+    right: 0;
+    width: 85%;
+    padding: 0 10px;
+    position: absolute;
+}
+section#banner .box-banner h1{
+    font-size: 60px;
+}
+section#banner .box-banner p{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Raleway';
+    width: 420px;
+}
+section#banner .box-banner .left figure{
+    float: left;
+}
+section#banner .box-banner .right figure{
+    float: right;
+}
+section#banner .box-banner figure{
+    width: 95%;
+    float: right;
+    height: 330px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+section#banner .nav-banner{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 116px;
+    word-spacing: 8px;
+    text-align: center;
+    z-index: 3;
+}
+section#banner .nav-banner span{
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #fff;
+    /* border: 1px solid rgba(128, 102, 0, 1); */
+    transition: all .2s linear
+}
+section#banner .nav-banner span.active{
+    background-color: #ffc500;
+    /* box-shadow: inset 0 0 2px rgba(128, 102, 0, 1); */
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+    section#banner{
+        display: block;
+    }
+    nav.exterior{
+        display: none;
+    }
+    section#banner .box-banner .right,
+    section#banner .box-banner .left{
+        padding: 0;
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    section#banner .box-banner{
+        top: 32%;
+    }
+}
+
+@media (max-height: 580px) {
+    section#banner .box-banner{
+        top: 25%;
+    }
+}

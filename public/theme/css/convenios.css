@@ -1,0 +1,62 @@
+section#convenios{
+  font-family: 'Roboto' !important;
+  padding-top: 110px;
+  font-size: 32px;
+  color: #673d3d;
+}
+section#convenios p.subtexto {
+  font-size: 18px;
+  font-weight: 800;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+section#convenios .subtitulo {
+  background-color: #FFCC00;
+  margin-top: 20px;
+}
+section#convenios p.subtitulo {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 800;
+  padding: 14px 0 14px 25px;
+}
+section#convenios li{
+  background-color: #fff;
+  font-size: 14px;
+  list-style: none;
+  display: block;
+  padding: 18px 0 18px 25px;
+}
+section#convenios li:nth-child(odd) {
+  background-color: rgba(255,204,0,0.4);
+}
+section#convenios .informacoes{
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+section#convenios .informacoes h5{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+section#convenios .informacoes p{
+    margin-bottom: 20px;
+}
+
+@media (min-width: 392px) {
+  section#convenios{
+    padding-top: 150px;
+  }
+}
+@media (min-width: 768px) {
+  section#convenios .informacoes{
+    margin-top: 0;
+    padding-left: 62px;
+  }
+}
+@media (min-width: 992px) {
+  section#convenios .informacoes{
+    margin-top: 0;
+    padding-left: 122px;
+  }
+}

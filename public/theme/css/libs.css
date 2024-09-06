@@ -1,0 +1,16 @@
+/* CSS responsavel por modificar as ferramentas de terceiros */
+
+/* Slick (home) */
+.slick-dots li button:before {
+  font-family: 'slick';
+  color: #673D3D !important;
+  font-size: 42px !important;
+  opacity: 1 !important;
+  line-height: 18px !important;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: #f6f6f6 !important;
+  border: 2px solid #673D3D !important;
+  border-radius: 50%;
+}

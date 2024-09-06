@@ -1,0 +1,265 @@
+nav{
+    color: #673d3d;
+    padding: 0px 0;
+    text-align: center;
+    font-family: 'Roboto Slab';
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+nav.flutuar{
+    position: fixed;
+    top: 0;
+    bottom: auto;
+}
+nav #menu-toggle{
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 38px;
+    right: 18px;
+    z-index: 100;
+}
+
+nav #menu-toggle div{
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #f9cc33;
+    transition: all ease .2s;
+}
+nav #menu-toggle.toggle div{
+    color: #fff;
+    background-color: #fff;
+}
+nav #menu-toggle div:nth-child(1){ top: 0px; }
+nav #menu-toggle div:nth-child(2){ top: 8px; }
+nav #menu-toggle div:nth-child(3){ top: 16px; }
+
+nav #menu-toggle.toggle div:nth-child(1){
+    top: 8px;
+    width: 28px;
+    transform: rotate(90deg);
+}
+
+nav #menu-toggle.toggle div:nth-child(2){
+    top: 6px;
+    width: 20px;
+    transform-origin: left top;
+    transform: rotate(-45deg);
+}
+
+nav #menu-toggle.toggle div:nth-child(3){
+    top: 6px;
+    right: 0;
+    width: 20px;
+    transform-origin: right top;
+    transform: rotate(45deg);
+}
+nav .container{
+    position: relative;
+    min-height: 98px;
+}
+nav .logo{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+nav .logo img{
+    width: 200px;
+}
+nav .menu{
+    display: none;
+}
+nav .menu-mobile{
+    padding-top: 70px;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    background-color: #f9cc33;
+}
+nav .menu-mobile li{
+    padding: 0 40px;
+}
+nav .menu-mobile li a{
+    display: block;
+    padding: 26px 0;
+    font-size: 20px;
+    font-weight: 100;
+    border-top: 1px solid #fff;
+}
+nav .menu-mobile li:nth-child(3) a{
+    border-bottom: 1px solid #fff;
+}
+nav .menu-mobile span{
+    display: block;
+    margin: 20px 0 6px;
+}
+nav .menu-mobile .rdsocial{
+    margin-top: 14px;
+}
+nav .links{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    font-size: 14px;
+    background: #fdb;
+}
+nav .links .resultados{
+    height: 50%;
+    display: block;
+    padding-top: 12px;
+    background: #ffcc00;
+}
+nav .links .duvidas{
+    color: #fff;
+    height: 50%;
+    font-weight: 400;
+    padding-top: 12px;
+    background-color: #673d3d;
+}
+nav .links .duvidas:hover .opcoes{
+    display: block;
+}
+nav .links .duvidas .opcoes{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    color: #a16060;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
+}
+
+nav .links .duvidas .opcoes a{
+    padding: 8px;
+    display: block;
+}
+
+nav .links .duvidas .opcoes a img{
+    height: 20px;
+    margin-bottom: -5px;
+}
+
+nav .links .duvidas .opcoes a:hover{
+    color: #fff;
+    background-color: #a16060;
+}
+
+nav .links .duvidas .opcoes a:hover img{
+    filter: brightness(10);
+}
+
+@media (min-width: 576px) {
+    nav .logo{
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 16px;
+        left: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    nav{
+        box-shadow: none;
+    }
+    nav #menu-toggle{
+        display: none;
+    }
+    nav .menu{
+        display: block;
+        text-align: right;
+    }
+    nav .menu-mobile{
+        display: none !important;
+    }
+    nav .menu a:before,
+    nav .menu a:after {
+      height: 3px;
+      position: absolute;
+      content: '';
+      -webkit-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+      background-color: #ffcc00;
+      width: 0;
+      margin-top: -5px;
+      margin-bottom: -5px;
+    }
+    nav .menu a:before {
+      top: 0;
+      left: 0;
+    }
+    nav .menu a:after {
+      bottom: 0;
+      right: 0;
+    }
+    nav .menu a:hover,
+    nav .menu .current a {
+      color: #975959;
+    }
+    nav .menu a:hover:before,
+    nav .menu .current a:before,
+    nav .menu a:hover:after,
+    nav .menu .current a:after {
+      width: 100%;
+      margin-top: -5px;
+      margin-bottom: -5px;
+    }
+    nav .menu {
+      letter-spacing: 1px;
+    }
+    nav .menu * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+    }
+    nav .menu a {
+      padding: 0.3em 0;
+      color: #673d3d;
+      position: relative;
+      text-decoration: none;
+      display: inline-block;
+    }
+    nav .menu li{
+        font-size: 14px;
+        list-style: none;
+        margin: 40px 20px;
+        display: inline-block;
+    }
+}
+
+@media (min-width: 992px) {
+    nav .logo{
+        top: 10px;
+    }
+    nav .logo img{
+        width: 230px;
+    }
+    nav .menu{
+        text-align: center;
+    }
+    nav .links{
+        display: block;
+        width: 260px;
+        font-size: 16px;
+    }
+    nav .links .resultados{
+        background: #ffcc00 url('../imagens/exames.png') no-repeat 20px 10px;
+        background-size: auto 50%;
+    }
+}

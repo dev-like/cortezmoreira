@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body{
+  height: 100%;
+  background-color: #f6f6f6;
+  font-family: 'Roboto';
+}
+p{
+  font-family: 'Raleway';
+}
+a{
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto Slab';
+}
+.hideFadeDown{
+    transition: all .7s ease-out;
+}
+
+.links-corpo{
+    text-align: center;
+    font-family: 'Roboto Slab';
+    display: block;
+    width: 260px;
+    font-size: 16px;
+    background: #fdb;
+    margin: 0 auto 20px;
+}
+.links-corpo .resultados{
+    height: 50%;
+    display: block;
+    padding: 12px 12px 12px 15px;
+    background: #ffcc00 url('../imagens/exames.png') no-repeat 20px 10px;
+    background-size: auto 50%;
+}
+.links-corpo .duvidas{
+    color: #fff;
+    height: 50%;
+    padding: 12px;
+    font-weight: 400;
+    background-color: #673d3d;
+    position: relative;
+}
+.links-corpo .duvidas:hover .opcoes{
+    display: block;
+}
+.links-corpo .duvidas .opcoes{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    color: #a16060;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
+}
+
+.links-corpo .duvidas .opcoes a{
+    padding: 8px;
+    display: block;
+}
+
+.links-corpo .duvidas .opcoes a img{
+    height: 20px;
+    margin-bottom: -5px;
+}
+
+.links-corpo .duvidas .opcoes a:hover{
+    color: #fff;
+    background-color: #a16060;
+}
+
+.links-corpo .duvidas .opcoes a:hover img{
+    filter: brightness(10);
+}
+@media (min-width: 992px) {
+    .links-corpo{
+        display: none;
+    }
+}

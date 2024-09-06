@@ -1,0 +1,60 @@
+section#agendamentos{
+  font-family: 'Roboto' !important;
+  padding-top: 110px;
+  font-size: 32px;
+  color: #673d3d;
+}
+section#agendamentos h1{
+  font-size: 32px;
+  margin-top: 30px;
+}
+section#agendamentos p {
+  font-size: 18px;
+  font-weight: 800;
+  padding-bottom: 15px;
+}
+.formulario{
+  background-color: #ffcc00;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+}
+form{
+  display: grid;
+}
+label {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+input {
+  padding: 8px;
+  border-radius: 10px;
+  border: 0 none;
+  outline: 0;
+}
+
+button.enviar {
+  padding: 15px;
+  width: 40%;
+  margin: 15px auto 10px auto;
+  background: #673d3d;
+  border-radius: 15px;
+  color: #fc0;
+  border: none;
+  transition: opacity 0.5s;
+}
+button.enviar:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+@media (min-width: 392px) {
+  .formulario{
+    padding: 10px 30px 10px 30px;
+  }
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+
+}
